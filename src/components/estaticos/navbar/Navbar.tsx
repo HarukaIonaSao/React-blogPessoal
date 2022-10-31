@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme: Theme) =>
   }),
 );
 
-function handleClick(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
+function Navbar(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
   event.preventDefault();
   console.info('You clicked a breadcrumb.');
 }
@@ -30,22 +30,22 @@ export default function IconBreadcrumbs() {
 
   return (
     <Breadcrumbs aria-label="breadcrumb">
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Blog Pessoal
       </Link>
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Home      
       </Link>    
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Postagens      
       </Link>  
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Temas     
       </Link>  
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Cadastrar tema      
       </Link> 
-      <Link color="inherit" href="/" onClick={handleClick} className={classes.link}>
+      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Logout     
       </Link> 
     </Breadcrumbs>
