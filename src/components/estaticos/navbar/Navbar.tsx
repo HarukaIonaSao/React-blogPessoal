@@ -29,7 +29,7 @@ export default function IconBreadcrumbs() {
   const classes = useStyles();
 
   return (
-    <Breadcrumbs aria-label="breadcrumb">
+    <Breadcrumbs aria-label="breadcrumb" >
       <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Blog Pessoal
       </Link>
@@ -45,10 +45,9 @@ export default function IconBreadcrumbs() {
       <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
         Cadastrar tema      
       </Link> 
-      <Link color="inherit" href="/" onClick={Navbar} className={classes.link}>
+      <Link  color="inherit" href="/login" onClick={Navbar} className={classes.link}>
         Logout     
       </Link> 
     </Breadcrumbs>
   );
 }
-
