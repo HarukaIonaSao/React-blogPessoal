@@ -1,12 +1,18 @@
-.titulo{
-    color:teal;
-    text-align: center;
+.box {
+    background-color: #4aedc4;
 }
 
-.img{
-    width: 500px;
-    height: 500px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 8px;
+.titulo{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.button{
+    border-color: white !important;
+    background-color:#14a37f;
+    color:white !important;
+}
+
+.postagens{
+    background-color: white;
 }

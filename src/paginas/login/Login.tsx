@@ -16,13 +16,13 @@ function Login() {
               <TextField label='Senha' name='senha' type='password' fullWidth margin='normal' />
               <Link to='/home' className='text-decoration'>
                 <Button variant='contained'>Entrar</Button>
-              </Link>
-            </form>
-
-            <Typography>Ainda não tem uma conta? Cadastre-se</Typography>
-          </Box>
-        </Grid>
-        <Grid item xs={6} className='fundoLogin'></Grid>
+              </Link>              
+            </form>            
+                
+            <Typography>Ainda não tem uma conta?Cadastre-se</Typography>
+            </Box>       
+         </Grid>
+        <Grid item xs={6} className='bgLogin'></Grid>
       </Grid>
     </>
     )
