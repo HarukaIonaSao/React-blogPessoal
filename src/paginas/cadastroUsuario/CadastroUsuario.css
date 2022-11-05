@@ -1,0 +1,17 @@
+.imagem2{
+    background-image: url('https://i.imgur.com/lHzwmxb.gif');
+    min-height: 100vh;
+}
+
+.texto2{
+    
+    font-weight: bold !important;
+}
+
+.btnCancelar{
+    margin-right: 20px !important;
+}
+
+.btnCadastrar{
+    background-color: teal !important;
+}
