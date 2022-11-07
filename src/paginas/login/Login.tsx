@@ -1,4 +1,5 @@
-import { Grid, Box, Typography, TextField, Button } from "@material-ui/core";
+import { Grid, Typography, TextField, Button } from "@material-ui/core";
+import { Box } from "@mui/material";
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import useLocalStorage from "react-use-localstorage";
@@ -74,7 +75,9 @@ function Login() {
 
             <Typography>
               Ainda não tem uma conta?
-              <Link to="/cadastrousuario">Cadastre-se</Link>
+              <Link to="/cadastrousuario" className="text-decoration">
+                Cadastre-se
+              </Link>
             </Typography>
           </Box>
         </Grid>

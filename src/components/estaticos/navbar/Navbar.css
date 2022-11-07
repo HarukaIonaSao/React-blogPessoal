@@ -1,7 +1,10 @@
 .text-decoration{
     text-decoration: none;
+    color: white !important;    
 }
+
 .cursor{
     cursor: pointer;
-    color: white;
+    color: teal !important;
 }
+

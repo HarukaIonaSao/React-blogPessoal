@@ -1,4 +1,5 @@
-import { Grid, Box, Typography, Button, TextField } from "@material-ui/core";
+import { Grid, Typography, Button, TextField } from "@material-ui/core";
+import { Box } from "@mui/material";
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import "./CadastroUsuario.css";
@@ -41,13 +42,24 @@ function CadastroUsuario() {
     });
   }
 
+  // =  atribuição de valor
+  // ==  checa o conteudo
+  // ===  checa conteudo e tipagem
+
   async function onSubmit(e: ChangeEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (confirmarSenha == user.senha) {
-      cadastroUsuario(`/usuarios/cadastrar`, user, setUserResult);
-      alert("Usuário cadastrado com sucesso");
+    if (confirmarSenha === user.senha && user.senha.length >= 3) {
+      try {
+        await cadastroUsuario("/usuarios/cadastrar", user, setUserResult);
+        alert("Usuário cadastrado com sucesso!");
+      } catch (error) {
+        alert("A senha deve ter mais de 8 caracteres");
+      }
     } else {
-      alert("Dados não correspondem! Verifique usuario e senha");
+      alert("Os dados não conferem. Verifique e tente novamente");
+
+      setUser({ ...user, senha: "" });
+      setConfirmarSenha("");
     }
   }
 
@@ -117,15 +129,13 @@ function CadastroUsuario() {
                   Cancelar
                 </Button>
               </Link>
-              <Link to="/login" className="text-decoration">
-                <Button
-                  variant="contained"
-                  type="submit"
-                  className="btnCadastrar"
-                >
-                  Cadastrar
-                </Button>
-              </Link>
+              <Button
+                variant="contained"
+                type="submit"
+                className="btnCadastrar"
+              >
+                Cadastrar
+              </Button>
             </form>
           </Box>
         </Grid>
