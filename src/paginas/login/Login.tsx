@@ -40,7 +40,7 @@ function Login() {
 
       alert("Usuário logado com sucesso!");
     } catch (error) {
-      alert("Erro ao logar! Verifique usuário e senha. ");
+      alert("Erro ao logar!!! Verifique usuário e senha. ");
     }
   }
 
