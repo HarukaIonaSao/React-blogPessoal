@@ -29,18 +29,18 @@ function Footer() {
                 gutterBottom
                 className="textos"
               >
-                Siga-nos nas redes sociais{" "}
+                Entre em contato comigo{" "}
               </Typography>
             </Box>
             <Box display="flex" alignItems="center" justifyContent="center">
               <a href="https://github.com/HarukaIonaSao/" target="_blank">
-                <GitHubIcon className="redes" />
+                <img src="https://i.imgur.com/M40vRJN.gif" width="60" className="redes" />
               </a>
               <a
                 href="https://www.linkedin.com/in/roberta-ribeiro-ela-she-b5521a4b/"
                 target="_blank"
               >
-                <LinkedInIcon className="redes" />
+                <img src="https://i.imgur.com/KqhVN8J.gif" width="60"className="redes" />
               </a>
             </Box>
           </Box>
@@ -52,11 +52,12 @@ function Footer() {
                 gutterBottom
                 style={{ color: "white" }}
               >
-                © 2020 Copyright:
+                © 2022 Copyright:
               </Typography>
-            </Box>
-            <Box>
-              <a
+            </Box >
+
+            <Box >
+              <a className="textos"
                 target="_blank"
                 href="https://www.linkedin.com/in/roberta-ribeiro-ela-she-b5521a4b/"
               >
@@ -64,7 +65,7 @@ function Footer() {
                   variant="subtitle2"
                   gutterBottom
                   className="textos"
-                  align="center"
+                  align="center"                  
                 >
                   Roberta Ribeiro
                 </Typography>
