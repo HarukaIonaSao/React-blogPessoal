@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./CadastroUsuario.css";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
+import {toast} from 'react-toastify';
 
 function CadastroUsuario() {
   let navigate = useNavigate();
@@ -51,12 +52,36 @@ function CadastroUsuario() {
     if (confirmarSenha === user.senha && user.senha.length >= 3) {
       try {
         await cadastroUsuario("/usuarios/cadastrar", user, setUserResult);
-        alert("Usuário cadastrado com sucesso!");
+        toast.success("Usuário cadastrado com sucesso!!",{
+          position:"top-right",
+          autoClose: 2500,
+          hideProgressBar: false,
+          pauseOnHover: false,
+          draggable: false,
+          theme:"colored",
+          progress: undefined
+        });
       } catch (error) {
-        alert("A senha deve ter mais de 8 caracteres");
+        toast.error("Falha ao cadastrar com sucesso!!",{
+          position:"top-right",
+          autoClose: 2500,
+          hideProgressBar: false,
+          pauseOnHover: false,
+          draggable: false,
+          theme:"colored",
+          progress: undefined
+        });
       }
     } else {
-      alert("Os dados não conferem. Verifique e tente novamente");
+      toast.error("Os dados não conferem! Verifique novamente",{
+        position:"top-right",
+        autoClose: 2500,
+        hideProgressBar: false,
+        pauseOnHover: false,
+        draggable: false,
+        theme:"colored",
+        progress: undefined
+      });
 
       setUser({ ...user, senha: "" });
       setConfirmarSenha("");

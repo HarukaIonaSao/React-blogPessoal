@@ -1,6 +1,10 @@
+*{
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .box1{
     background-color: #4aedc4;
-    height: 120px;
+    height: 110px;
 }
 
 .box2{

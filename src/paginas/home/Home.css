@@ -1,3 +1,7 @@
+*{
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .box {
     background-color: #4aedc4;
 }
@@ -8,11 +12,15 @@
 }
 
 .button{
-    border-color: white !important;
-    background-color:#14a37f;
+    border-color: #14a37f;
+    background-color:#14a37f !important;
     color:white !important;
 }
 
 .postagens{
-    background-color: white;
+    background-color:#14a37f;
+}
+
+.text-decoration{
+    text-decoration: none;
 }

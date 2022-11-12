@@ -1,8 +1,13 @@
+*{
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .cursor{
     cursor: pointer;
 }
 
 .btnModal{
-    border-color: #008080 !important;
-    background-color: #008080 !important;
+    background-color:#14a37f!important;
+    color: white !important;
+    margin-bottom: 5px;
 }

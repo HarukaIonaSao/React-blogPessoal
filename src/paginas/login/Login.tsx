@@ -2,14 +2,17 @@ import { Grid, Typography, TextField, Button } from "@material-ui/core";
 import { Box } from "@mui/material";
 import React, { useState, useEffect, ChangeEvent } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
 import { login } from "../../services/Service";
 import UserLogin from "../../models/UserLogin";
 import "./Login.css";
+import { useDispatch } from 'react-redux';
+import { addToken } from "../../store/tokens/Actions";
+import {toast} from 'react-toastify';
 
 function Login() {
   let navigate = useNavigate();
-  const [token, setToken] = useLocalStorage("token");
+  const [token, setToken] = useState("");
+  const dispatch = useDispatch();
   const [userLogin, setUserLogin] = useState<UserLogin>({
     id: 0,
     nome: "",
@@ -29,6 +32,7 @@ function Login() {
 
   useEffect(() => {
     if (token != "") {
+      dispatch(addToken(token));
       navigate("/home");
     }
   }, [token]);
@@ -38,9 +42,25 @@ function Login() {
     try {
       await login(`/usuarios/logar`, userLogin, setToken);
 
-      alert("Usuário logado com sucesso!");
+      toast.info("Usuário logado com sucesso!!",{
+        position:"top-right",
+        autoClose: 2500,
+        hideProgressBar: false,
+        pauseOnHover: false,
+        draggable: false,
+        theme:"colored",
+        progress: undefined
+      })
     } catch (error) {
-      alert("Erro ao logar!!! Verifique usuário e senha. ");
+      toast.error("Erro ao logar.Dados não conferem!!",{
+        position:"top-right",
+        autoClose: 2500,
+        hideProgressBar: false,
+        pauseOnHover: false,
+        draggable: false,
+        theme:"colored",
+        progress: undefined
+      })
     }
   }
 

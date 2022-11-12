@@ -1,3 +1,7 @@
+*{
+  font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .bgLogin {
     background-image: url('https://i.imgur.com/lHzwmxb.gif');
     min-height: 100vh;
@@ -8,7 +12,7 @@
 }
 
 .btnEntrar{
-  background-color: #008080 !important;  
+  background-color: #14a37f !important;  
 }
 
 

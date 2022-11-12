@@ -1,58 +1,73 @@
 import React from "react";
-import { makeStyles, Theme, createStyles } from "@material-ui/core/styles";
 import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import { Link as Breadlink } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
-import useLocalStorage from "react-use-localstorage";
+import { useDispatch } from "react-redux";
+import { TokenState } from './../../../store/tokens/TokensReducer';
+import { addToken } from "../../../store/tokens/Actions";
+import './Navbar.css';
+import { useSelector } from "react-redux";
+import {toast} from 'react-toastify';
 
-const useStyles = makeStyles((theme: Theme) =>
-  createStyles({
-    link: {
-      display: "flex",
-    },
-    icon: {
-      marginRight: theme.spacing(0.5),
-      width: 20,
-      height: 20,
-    },
-  })
-);
+function Navbar() {
 
-export default function Navbar() {
-  const classes = useStyles();
-  const [token,setToken] = useLocalStorage('token');
+  const dispatch = useDispatch();
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
   let navigate = useNavigate();
 
-  function logout(){
-    setToken('')
-    alert('Usuário deslogado!');
+  function logout() {
+    dispatch(addToken(''));
+    toast.info('Usuário deslogado',{
+      position:"top-right",
+      autoClose: 2500,
+      hideProgressBar: false,
+      pauseOnHover: false,
+      draggable: false,
+      theme:"colored",
+      progress: undefined
+    })
     navigate('/login')
   }
 
+  var navbarComponent;
+
+  if (token != "") {
+    navbarComponent = 
+    <div >
+      <Breadcrumbs aria-label="breadcrumb" className="navBar" >
+
+        <Link to="/home" className="text-decoration" color="black">
+          <Breadlink color="primary" >Home</Breadlink>
+        </Link>
+
+        <Link to="/postagem" className="text-decoration" color="black">
+          <Breadlink color="primary" >Postagens</Breadlink>
+        </Link>
+
+        <Link to="/tema" className="text-decoration" color="black">
+          <Breadlink color="primary" >Temas</Breadlink>
+        </Link>
+
+        <Link to="/formularioTema" className="text-decoration" color="black">
+          <Breadlink color="primary" >Cadastrar tema</Breadlink>
+        </Link>
+
+        <Breadlink className="text-decoration" onClick={logout}>
+          Sair
+        </Breadlink> 
+
+      </Breadcrumbs>
+    </div>
+  }
+
   return (
-    <Breadcrumbs aria-label="breadcrumb" >
-     
-      <Link to="/home" className="text-decoration" color="white">
-      <Breadlink color="inherit" >Home</Breadlink>
-      </Link>
-
-      <Link to="/postagem" className="text-decoration" color="white">
-      <Breadlink color="inherit" >Postagens</Breadlink>
-      </Link>
-
-      <Link to="/tema" className="text-decoration" color="white">
-      <Breadlink color="inherit" >Temas</Breadlink>
-      </Link>
-
-      <Link to ="/formularioTema" className="text-decoration" color="white">
-      <Breadlink color="inherit" >Cadastrar tema</Breadlink>
-      </Link>
-
-      <Breadlink color="inherit"  className="text-decoration" onClick={logout}>          
-      Sair
-      </Breadlink>
-
-    </Breadcrumbs>
+    <>
+    {navbarComponent}
+    </>    
   );
 }
+
+export default Navbar;

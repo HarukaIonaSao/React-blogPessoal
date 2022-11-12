@@ -16,7 +16,7 @@ function TabPostagem() {
     <>
       <TabContext value={value}>
         <AppBar position="static">
-          <Tabs centered indicatorColor="secondary" onChange={handleChange}>
+          <Tabs centered indicatorColor="secondary" className="tabPostagem" onChange={handleChange}>
             <Tab label="Todas as postagens" value="1" />
             <Tab label="Sobre" value="2" />
           </Tabs>
@@ -35,7 +35,7 @@ function TabPostagem() {
             align="center"
             className="titulo"
           >
-            Sobre-nós
+            Sobre mim
           </Typography>
           <Typography
             variant="body1"
@@ -43,12 +43,24 @@ function TabPostagem() {
             color="textPrimary"
             align="justify"
           >
-            Red leicester mozzarella melted cheese. Say cheese st. agur blue
-            cheese cottage cheese airedale cheddar dolcelatte cheese on toast
-            port-salut. Smelly cheese babybel fromage paneer airedale parmesan
-            blue castello monterey jack. Camembert de normandie halloumi paneer
-            goat cheese slices cheese and wine cheesecake fromage. Port-salut
-            manchego paneer queso.
+            <h2 className="tabPostagem">
+              <a href="https://www.linkedin.com/in/roberta-ribeiro-b5521a4b/" target= ' blank' className="tabPostagem" >🎮 Roberta Ribeiro 🎮</a> </h2>
+              <p className="tabPostagem">
+                Desenvolvedora Fullstack Java
+              </p>
+              <p className="tabPostagem">
+                Curiosa desde criança, sempre fui atrás de saber o que há por trás das coisas. Conhecimento nunca é demais. 
+              </p> 
+              <p className="tabPostagem">
+                Amo  jogos 8bits, animes e doces. 
+              </p>
+              <p className="tabPostagem">
+                Outra paixão é a Língua de sinais(Libras) 🤘🏿, que me motiva a pensar cada vez mais em acessibilidade.
+              </p>
+              <p className="tabPostagem">
+                Essa é uma demonstração sobre meus hobbies e habilidades. Vá até minhas redes e tenha acesso ao conteúdo completo 😉
+              </p>   
+      
           </Typography>
         </TabPanel>
       </TabContext>

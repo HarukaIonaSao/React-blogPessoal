@@ -1,10 +1,15 @@
+*{
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .text-decoration{
     text-decoration: none !important; 
-    color: white !important;    
+    color: black;
 }
 
 .cursor{
     cursor: pointer;
-    color: teal !important;
+    color: #14a37f ;
 }
+
 

@@ -1,26 +1,38 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from "react";
 import { Typography, Grid, Button } from "@material-ui/core";
 import "./Home.css";
 import { Box } from "@mui/material";
-import ModalPostagem from '../../components/postagens/modalpostagem/ModalPostagem';
-import { useNavigate } from 'react-router';
-import useLocalStorage from 'react-use-localstorage';
-
+import ModalPostagem from "../../components/postagens/modalpostagem/ModalPostagem";
+import { useNavigate } from "react-router";
 import TabPostagem from "../../components/postagens/tabpostagem/TabPostagem";
+import { useSelector } from "react-redux";
+import { TokenState } from "./../../store/tokens/TokensReducer";
+import { Link } from "react-router-dom";
+import {toast} from 'react-toastify';
 
 function Home() {
 
   let navigate = useNavigate();
-    const [token, setToken] = useLocalStorage('token');
-    
-    useEffect(() => {
-      if (token == "") {
-          alert("Você precisa estar logado")
-          navigate("/login")
-  
-      }
-  }, [token])
+  const token = useSelector<TokenState, TokenState["tokens"]>(
+    (state) => state.tokens
+  );
 
+  useEffect(() => {
+    if (token == "") {
+      toast.error("Você precisa estar logado!!",{
+        position:"top-right",
+        autoClose: 2500,
+        hideProgressBar: false,
+        pauseOnHover: false,
+        draggable: false,
+        theme:"colored",
+        progress: undefined
+      });
+
+      navigate("/login");
+    }
+  }, [token]);
+ 
   return (
     <>
       <Grid
@@ -54,13 +66,18 @@ function Home() {
             </Typography>
           </Box>
           <Box display="flex" justifyContent="center">
-                        <Box marginRight={1}>
-                            <ModalPostagem />
-                        </Box>
-                        <Button variant="outlined" className='botao'>Ver Postagens</Button>
+            <Box marginRight={1}>
+              <ModalPostagem />
+            </Box>
+
+            <Link to="./postagens" className="text-decoration">
+            <Button variant="outlined" className="button">
+              Ver Postagens
+            </Button>
+            </Link>            
           </Box>
-          </Grid>
-          
+        </Grid>
+
         <Grid item xs={6}>
           <img
             src="https://i.imgur.com/5lM4os7.png"

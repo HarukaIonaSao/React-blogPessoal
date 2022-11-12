@@ -1,3 +1,7 @@
+*{
+    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+}
+
 .btnDelPost{
-    background-color: #008080 !important;
+    background-color: #14a37f !important;
 }

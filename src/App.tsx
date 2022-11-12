@@ -12,10 +12,17 @@ import DeletarPostagem from "./components/postagens/deletarpostagem/DeletarPosta
 import DeletarTema from "./components/temas/deletartema/DeletarTema";
 import ListaTema from "./components/temas/listatema/ListaTema";
 import ListaPostagem from "./components/postagens/listapostagem/ListaPostagem";
+import VLibras from "vlibras-react";
+import { Provider } from "react-redux";
+import store from "./store/Store";
+import {ToastContainer} from "react-toastify";
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  return (
-    <Router>
+  return (   
+    <Provider store={store}>
+      <ToastContainer />
+      <Router>
       <Navbar />
       <div style={{ minHeight: "100vh" }}>
         <Routes>
@@ -35,6 +42,8 @@ function App() {
       </div>
       <Footer />
     </Router>
+    </Provider>
+    
   );
 }
 
