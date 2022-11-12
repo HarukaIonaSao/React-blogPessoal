@@ -20,9 +20,9 @@ function Navbar() {
 
   function logout() {
     dispatch(addToken(''));
-    toast.info('Usuário deslogado',{
+    toast.success('Usuário deslogado com sucesso',{
       position:"top-right",
-      autoClose: 2500,
+      autoClose: 3500,
       hideProgressBar: false,
       pauseOnHover: false,
       draggable: false,

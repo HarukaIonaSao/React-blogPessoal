@@ -27,7 +27,7 @@ function ListaTema() {
     if (token == "") {
       toast.success("Você precisa estar logado!!",{
         position:"top-right",
-        autoClose: 2500,
+        autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,

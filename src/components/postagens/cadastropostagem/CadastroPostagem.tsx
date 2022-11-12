@@ -31,7 +31,7 @@ function CadastroPostagem() {
     if (token == "") {
       toast.error("Você precisa estar logado!!",{
         position:"top-right",
-        autoClose: 2500,
+        autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,
@@ -103,7 +103,7 @@ function CadastroPostagem() {
         });
         toast.success("Postagem atualizada com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -113,7 +113,7 @@ function CadastroPostagem() {
       } catch (error) {
         toast.error("Erro ao atualizar postagem!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -130,7 +130,7 @@ function CadastroPostagem() {
         });
         toast.success("Postagem cadastrada com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -140,7 +140,7 @@ function CadastroPostagem() {
       } catch (error) {
         toast.error("Falha ao cadastrar postagem!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,

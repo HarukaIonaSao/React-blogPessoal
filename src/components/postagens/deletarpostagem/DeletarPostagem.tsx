@@ -27,7 +27,7 @@ function DeletarPostagem() {
     if (token == "") {
       toast.error("Você precisa estar logado!!",{
         position:"top-right",
-        autoClose: 2500,
+        autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,
@@ -61,7 +61,7 @@ function DeletarPostagem() {
     });
     toast.success("Você precisa estar logado!!",{
       position:"top-right",
-      autoClose: 2500,
+      autoClose: 3500,
       hideProgressBar: false,
       pauseOnHover: false,
       draggable: false,

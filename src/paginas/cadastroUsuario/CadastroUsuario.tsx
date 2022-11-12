@@ -54,7 +54,7 @@ function CadastroUsuario() {
         await cadastroUsuario("/usuarios/cadastrar", user, setUserResult);
         toast.success("Usuário cadastrado com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -64,7 +64,7 @@ function CadastroUsuario() {
       } catch (error) {
         toast.error("Falha ao cadastrar com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -75,7 +75,7 @@ function CadastroUsuario() {
     } else {
       toast.error("Os dados não conferem! Verifique novamente",{
         position:"top-right",
-        autoClose: 2500,
+        autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,

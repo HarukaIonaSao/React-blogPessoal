@@ -24,7 +24,7 @@ function CadastroTema() {
     if (token == "") {
       toast.error("Você precisa estar logado!!",{
         position:"top-right",
-        autoClose: 2500,
+        autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,
@@ -71,7 +71,7 @@ function CadastroTema() {
         });
         toast.success("Tema atualizado com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -81,7 +81,7 @@ function CadastroTema() {
       } catch (error) {
         toast.error("Falha ao atualizar tema!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -98,7 +98,7 @@ function CadastroTema() {
         });
         toast.success("Tema cadastrado com sucesso!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
@@ -108,7 +108,7 @@ function CadastroTema() {
       } catch (error) {
         toast.error("Falha ao cadastrar tema!!",{
           position:"top-right",
-          autoClose: 2500,
+          autoClose: 3500,
           hideProgressBar: false,
           pauseOnHover: false,
           draggable: false,
