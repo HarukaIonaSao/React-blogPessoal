@@ -222,6 +222,7 @@ function CadastroPostagem() {
         </FormControl>
       </form>
     </Container>
+
     </>
   );
 }

@@ -8,6 +8,8 @@ import "./Login.css";
 import { useDispatch } from 'react-redux';
 import { addToken } from "../../store/tokens/Actions";
 import {toast} from 'react-toastify';
+import VLibras from "vlibras-react";
+
 
 function Login() {
   let navigate = useNavigate();
@@ -102,7 +104,8 @@ function Login() {
           </Box>
         </Grid>
         <Grid item xs={6} className="bgLogin"></Grid>
-      </Grid>
+      </Grid>      
+      <VLibras/>
     </>
   );
 }

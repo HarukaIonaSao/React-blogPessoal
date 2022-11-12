@@ -59,7 +59,7 @@ function DeletarPostagem() {
         Authorization: token,
       },
     });
-    toast.success("Você precisa estar logado!!",{
+    toast.success("Postagem apagada com sucesso!!",{
       position:"top-right",
       autoClose: 3500,
       hideProgressBar: false,

@@ -6,6 +6,7 @@ import "./CadastroUsuario.css";
 import { cadastroUsuario } from "../../services/Service";
 import User from "../../models/User";
 import {toast} from 'react-toastify';
+import VLibras from "vlibras-react";
 
 function CadastroUsuario() {
   let navigate = useNavigate();
@@ -165,7 +166,10 @@ function CadastroUsuario() {
           </Box>
         </Grid>
       </Grid>
+    
     </>
+         
+
   );
 }
 
