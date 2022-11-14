@@ -3,22 +3,23 @@
 }
 
 .box {
-    background-color: #4aedc4;
+    background-color: #42C2FF;
 }
 
 .titulo{
     color: white !important;
-    font-weight: bold !important;
+    font-size: 30px !important;
+    padding-top: 10px;
 }
 
 .button{
-    border-color: #14a37f;
-    background-color:#14a37f !important;
+    border-color: #47B5FF;
+    background-color:#47B5FF !important;
     color:white !important;
 }
 
 .postagens{
-    background-color:#14a37f;
+    background-color:#47B5FF;
 }
 
 .text-decoration{

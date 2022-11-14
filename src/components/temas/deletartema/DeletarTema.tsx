@@ -14,17 +14,17 @@ import Tema from "../../../models/Tema";
 import { useSelector } from 'react-redux';
 import { TokenState } from './../../../store/tokens/TokensReducer';
 import {toast} from 'react-toastify';
-import './DeletarTema.css';
 
 function DeletarTema() {
   let navigate = useNavigate();
   const { id } = useParams<{ id: string }>();
   const token = useSelector<TokenState, TokenState["tokens"]>(
     (state) => state.tokens
-  );  const [tema, setTema] = useState<Tema>();
+  );  
+  const [tema, setTema] = useState<Tema>();
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       toast.error("Você precisa estar logado!!",{
         position:"top-right",
         autoClose: 3500,
@@ -45,18 +45,18 @@ function DeletarTema() {
   }, [id]);
 
   async function findById(id: string) {
-    buscaId(`/tema/${id}`, setTema, {
+     buscaId(`/temas/${id}`, setTema, {
       headers: {
-        Authorization: token,
+        'Authorization': token,
       },
     });
   }
 
   function sim() {
     navigate("/temas");
-    deleteId(`/tema/${id}`, {
+    deleteId(`/temas/${id}`, {
       headers: {
-        Authorization: token,
+        'Authorization': token,
       },
     });
     toast.success("Tema deletado com sucesso!!",{

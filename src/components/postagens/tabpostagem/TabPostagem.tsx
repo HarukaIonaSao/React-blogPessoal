@@ -55,7 +55,7 @@ function TabPostagem() {
                 Amo  jogos 8bits, animes e doces. 
               </p>
               <p className="tabPostagem">
-                Outra paixão é a Língua de sinais(Libras) 🤘🏿, que me motiva a pensar cada vez mais em acessibilidade.
+                Outra paixão é a Língua de sinais (Libras) 🤘🏿, que me motiva a pensar cada vez mais em acessibilidade.
               </p>
               <p className="tabPostagem">
                 Essa é uma demonstração sobre meus hobbies e habilidades. Vá até minhas redes e tenha acesso ao conteúdo completo 😉

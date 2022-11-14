@@ -53,7 +53,7 @@ function Home() {
               align="center"
               className="titulo"
             >
-              Seja bem vind@!
+              Olá 👋🏿
             </Typography>
             <Typography
               variant="h5"
@@ -79,12 +79,12 @@ function Home() {
           </Box>
         </Grid>
 
-        <Grid item xs={6}>
+        <Grid item sm={8}>
           <img
-            src="https://i.imgur.com/5lM4os7.png"
+            src="https://i.imgur.com/AQQtRbJ.gif"
             alt=""
-            width="300px"
-            height="300px"
+            width="150px"
+            height="150px"
           />
         </Grid>
         <Grid xs={12} className="postagens">

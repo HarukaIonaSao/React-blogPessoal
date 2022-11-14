@@ -132,6 +132,7 @@ function CadastroTema() {
           color="textSecondary"
           component="h1"
           align="center"
+          className="cad-tema"
         >
           Cadastrar tema
         </Typography>

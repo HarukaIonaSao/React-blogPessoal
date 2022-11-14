@@ -54,8 +54,8 @@ function ListaTema() {
     <>
       {temas.map((tema) => (
         <Box m={10}>
-          <Card variant="outlined">
-            <CardContent>
+          <Card variant="outlined" >
+            <CardContent className="card-tema">
               <Typography color="textSecondary" gutterBottom>
                 Tema
               </Typography>
@@ -63,7 +63,7 @@ function ListaTema() {
                 {tema.descricao}
               </Typography>
             </CardContent>
-            <CardActions>
+            <CardActions  className="card-tema">
               <Box display="flex" justifyContent="center" mb={1.5}>
                 <Link to={`/formularioTema/${tema.id}`} className="text-decoration">
                   <Box mx={1}>

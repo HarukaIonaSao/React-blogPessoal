@@ -24,7 +24,7 @@ function DeletarPostagem() {
   const [postagem, setPostagem] = useState<Postagem>();
 
   useEffect(() => {
-    if (token == "") {
+    if (token === "") {
       toast.error("Você precisa estar logado!!",{
         position:"top-right",
         autoClose: 3500,
@@ -45,9 +45,9 @@ function DeletarPostagem() {
   }, [id]);
 
   async function findById(id: string) {
-    buscaId(`/postagens/${id}`, setPostagem, {
+   await buscaId(`/postagens/${id}`, setPostagem, {
       headers: {
-        Authorization: token,
+        'Authorization': token,
       },
     });
   }
@@ -56,7 +56,7 @@ function DeletarPostagem() {
     navigate("/postagem");
     deleteId(`/postagens/${id}`, {
       headers: {
-        Authorization: token,
+        'Authorization': token
       },
     });
     toast.success("Postagem apagada com sucesso!!",{

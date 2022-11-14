@@ -5,11 +5,10 @@ import { Link, useNavigate } from "react-router-dom";
 import { login } from "../../services/Service";
 import UserLogin from "../../models/UserLogin";
 import "./Login.css";
-import { useDispatch } from 'react-redux';
+import { useDispatch } from "react-redux";
 import { addToken } from "../../store/tokens/Actions";
-import {toast} from 'react-toastify';
+import { toast } from "react-toastify";
 import VLibras from "vlibras-react";
-
 
 function Login() {
   let navigate = useNavigate();
@@ -24,6 +23,7 @@ function Login() {
     token: "",
   });
 
+  
   // o ...(spread operator) espalha todos os atributos do userlogin para dentro so setUserLogin
   function updatedModel(e: ChangeEvent<HTMLInputElement>) {
     setUserLogin({
@@ -44,25 +44,25 @@ function Login() {
     try {
       await login(`/usuarios/logar`, userLogin, setToken);
 
-      toast.info("Usuário logado com sucesso!!",{
-        position:"top-right",
+      toast.info("Usuário logado com sucesso!!", {
+        position: "top-right",
         autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,
-        theme:"colored",
-        progress: undefined
-      })
+        theme: "colored",
+        progress: undefined,
+      });
     } catch (error) {
-      toast.error("Erro ao logar.Dados não conferem!!",{
-        position:"top-right",
+      toast.error("Erro ao logar.Dados não conferem!!", {
+        position: "top-right",
         autoClose: 3500,
         hideProgressBar: false,
         pauseOnHover: false,
         draggable: false,
-        theme:"colored",
-        progress: undefined
-      })
+        theme: "colored",
+        progress: undefined,
+      });
     }
   }
 
@@ -104,8 +104,9 @@ function Login() {
           </Box>
         </Grid>
         <Grid item xs={6} className="bgLogin"></Grid>
-      </Grid>      
-      <VLibras/>
+      </Grid>
+      <VLibras />
+     
     </>
   );
 }
