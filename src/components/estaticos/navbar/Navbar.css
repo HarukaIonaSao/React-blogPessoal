@@ -1,15 +1,22 @@
-*{
-    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
-}
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
+*{
+  font-family: 'VT323', monospace !important;
+  font-size: 20px;
+}
 .text-decoration{
     text-decoration: none !important; 
-    color: black;
+    color: aqua !important;
 }
 
 .cursor{
     cursor: pointer;
-    color: #47B5FF ;
+    color: #133c55 ;
+}
+
+.navBar{
+    background-color: #101935;
+    color: aqua !important;
 }
 
 

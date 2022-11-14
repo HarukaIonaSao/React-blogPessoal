@@ -1,24 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
-    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'VT323', monospace !important;
+  font-size: 20px;
 }
 
 .box1{
-    background-color: #42C2FF;
+    background-color: #133c55;
     height: 110px;
 }
 
 .box2{
-    background-color: #47B5FF;
+    background-color: #133c55;
     height: 60px;
 }
 
 .redes{
     font-size: 60px !important;
-    color:white;
+    color:aqua;
+    margin-left: 5px;
 }
 
 .textos{
-    color: white;
+    color: aqua;
     text-decoration: none !important;
 }
 

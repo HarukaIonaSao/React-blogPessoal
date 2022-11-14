@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
-    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'VT323', monospace !important;
+  font-size: 20px;
+  color: aqua;
 }
 
 .tabPostagem{
-    background-color: #47B5FF ;
-    color: white; 
+    background-color: #133c55 ;
+    color: aquamarine; 
     font-weight: bold;  
     text-decoration: none;  
 }

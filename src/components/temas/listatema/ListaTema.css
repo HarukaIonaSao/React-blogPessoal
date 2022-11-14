@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
 *{
-    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'VT323', monospace !important;
+  font-size: 20px;
 }
 
 .text-decoration{
@@ -8,9 +10,9 @@
 }
 
 .btnAtualizar{
-    background-color: #47B5FF  !important;
+    background-color: #133c55  !important;
 }
 
 .card-tema{
-    background-color: aliceblue;
+    background-color: aliceblue ;
 }

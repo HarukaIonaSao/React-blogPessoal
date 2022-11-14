@@ -36,26 +36,26 @@ function Navbar() {
 
   if (token != "") {
     navbarComponent = 
-    <div >
-      <Breadcrumbs aria-label="breadcrumb" className="navBar" >
+    <div className="navBar">
+      <Breadcrumbs aria-label="breadcrumb"  >
 
         <Link to="/home" className="text-decoration" color="black">
-          <Breadlink color="primary" >Home</Breadlink>
+          <Breadlink color="primary" className="navBar">Home</Breadlink>
         </Link>
 
         <Link to="/postagem" className="text-decoration" color="black">
-          <Breadlink color="primary" >Postagens</Breadlink>
+          <Breadlink color="primary"  className="navBar">Postagens</Breadlink>
         </Link>
 
         <Link to="/tema" className="text-decoration" color="black">
-          <Breadlink color="primary" >Temas</Breadlink>
+          <Breadlink color="primary"  className="navBar">Temas</Breadlink>
         </Link>
 
         <Link to="/formularioTema" className="text-decoration" color="black">
-          <Breadlink color="primary" >Cadastrar tema</Breadlink>
+          <Breadlink color="primary"  className="navBar">Cadastrar tema</Breadlink>
         </Link>
 
-        <Breadlink className="text-decoration" onClick={logout}>
+        <Breadlink className="text-decoration"  onClick={logout}>
           Sair
         </Breadlink> 
 

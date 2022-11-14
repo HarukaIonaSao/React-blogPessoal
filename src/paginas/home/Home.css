@@ -1,25 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 *{
-    font-family: 'Verdana', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'VT323', monospace !important;
+  font-size: 20px;
 }
 
 .box {
-    background-color: #42C2FF;
+    background-color: #101935;
 }
 
 .titulo{
-    color: white !important;
-    font-size: 30px !important;
+    color: aqua !important;
+    font-size: 20px !important;
     padding-top: 10px;
 }
 
 .button{
-    border-color: #47B5FF;
-    background-color:#47B5FF !important;
+    border-color: #133c55;
+    background-color:#133c55 !important;
     color:white !important;
 }
 
 .postagens{
-    background-color:#47B5FF;
+    background-color:#133c55;
 }
 
 .text-decoration{

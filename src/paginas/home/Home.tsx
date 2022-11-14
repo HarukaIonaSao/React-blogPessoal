@@ -83,8 +83,8 @@ function Home() {
           <img
             src="https://i.imgur.com/AQQtRbJ.gif"
             alt=""
-            width="150px"
-            height="150px"
+            width="130px"
+            height="100px"
           />
         </Grid>
         <Grid xs={12} className="postagens">

@@ -58,7 +58,7 @@ function TabPostagem() {
                 Outra paixão é a Língua de sinais (Libras) 🤘🏿, que me motiva a pensar cada vez mais em acessibilidade.
               </p>
               <p className="tabPostagem">
-                Essa é uma demonstração sobre meus hobbies e habilidades. Vá até minhas redes e tenha acesso ao conteúdo completo 😉
+                Se quiser me conhecer melhor ou ter uma colaboradora para um projeto, é só me chamar 😉
               </p>   
       
           </Typography>
