@@ -100,7 +100,7 @@ function ListaPostagem() {
                   className="text-decoration"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button variant="contained" className="btnDel" size="small" color="secondary">
                       Deletar
                     </Button>
                   </Box>
