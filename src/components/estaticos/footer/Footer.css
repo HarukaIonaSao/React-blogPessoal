@@ -6,23 +6,23 @@
 }
 
 .box1{
-    background-color: #101935;
+    background-color: #2660a4;
     height: 110px;
 }
 
 .box2{
-    background-color: #101935;
+    background-color: #2660a4;
     height: 60px;
 }
 
 .redes{
     font-size: 60px !important;
-    color:aqua;
+    color:white;
     margin-left: 5px;
 }
 
 .textos{
-    color: 	aqua;
+    color: 	white;
     text-decoration: none !important;
 }
 

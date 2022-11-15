@@ -3,20 +3,21 @@
 *{
   font-family: 'VT323', monospace !important;
   font-size: 20px;
+  color: white;
 }
 .text-decoration{
     text-decoration: none !important; 
-    color: aqua !important;
+    color: white !important;
 }
 
 .cursor{
     cursor: pointer;
-    color: aqua ;
+    color: white !important ;
 }
 
 .navBar{
-    background-color: #101935;
-    color: aqua !important;
+    background-color: #2660a4;
+    color: white!important;
 }
 
 

@@ -23,7 +23,7 @@ const useStyles = makeStyles((theme: Theme) =>
       position: "absolute",
       width: 400,
       backgroundColor: theme.palette.background.paper,
-      border: "2px solid #FFFF",
+      border: "2px dotted #2660a4",
       boxShadow: theme.shadows[5],
       padding: theme.spacing(2, 4, 3),
     },
@@ -45,7 +45,7 @@ function ModalPostagem() {
 
   const body = (
     <div style={modalStyle} className={classes.paper}>
-      <Box display="flex" justifyContent="flex-end" className="cursor">
+      <Box display="flex" justifyContent="flex-end"  className="cursor">
         <CloseIcon onClick={handleClose} />
       </Box>
       <CadastroPostagem />

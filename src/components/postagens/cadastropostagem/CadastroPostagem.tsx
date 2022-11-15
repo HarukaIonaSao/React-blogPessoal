@@ -163,9 +163,9 @@ function CadastroPostagem() {
 
         <Typography
           variant="h3"
-          color="textSecondary"
           component="h1"
           align="center"
+          className="cad-textos"
         >
           Cadastro postagem
         </Typography>
@@ -181,7 +181,7 @@ function CadastroPostagem() {
           fullWidth
         />
 
-        {/* multiline minrow deica o form com mais espaço para o campo de texto */}
+        {/* multiline minrow deixa o form com mais espaço para o campo de texto */}
         <TextField
           id="texto"
           value={postagem.texto}
@@ -194,7 +194,7 @@ function CadastroPostagem() {
           minRows={4}
           fullWidth
         />
-        <FormControl>
+        <FormControl >
           <InputLabel id="temasSelect">Tema </InputLabel>
           <Select labelId='temasSelect' id='temas' 
             onChange={(e) => buscaId(`/temas/${e.target.value}`, setTema, {
@@ -214,7 +214,6 @@ function CadastroPostagem() {
             className="btnCadastroPost"
             type="submit"
             variant="contained"
-            color="primary"
             disabled={tema.id === 0}
           >
             Enviar

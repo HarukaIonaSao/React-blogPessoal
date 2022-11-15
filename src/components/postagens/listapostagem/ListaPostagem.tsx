@@ -65,7 +65,7 @@ function ListaPostagem() {
         <Box m={10}>
           <Card variant="outlined">
             <CardContent className="card-post">
-              <Typography color="textSecondary" gutterBottom>
+              <Typography gutterBottom>
                 Postagens
               </Typography>
               <Typography variant="h5" component="h2">
@@ -100,7 +100,7 @@ function ListaPostagem() {
                   className="text-decoration"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" className="btnDel" size="small" color="secondary">
+                    <Button variant="contained" color="secondary" size="small" >
                       Deletar
                     </Button>
                   </Box>

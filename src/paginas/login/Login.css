@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 
-*{
+ *{
   font-family: 'VT323', monospace !important;
   font-size: 20px;
-}
+} 
 
 .bgLogin {
     background-image: url('https://i.imgur.com/9cg3NJA.gif');
@@ -12,11 +12,16 @@
 
 .text-decoration {
     text-decoration: none;
+    color: white!important;
+}
+
+.text-login{
+  color: navy;
+  text-decoration: none;  
 }
 
 .btnEntrar{
-  background-color: #101935 !important;  
-  color: aliceblue !important;
+  background-color: navy !important;
 }
 
 

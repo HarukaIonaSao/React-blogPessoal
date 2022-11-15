@@ -3,12 +3,11 @@
 *{
   font-family: 'VT323', monospace !important;
   font-size: 20px;
-  color: 	aqua;
 }
 
 .tabPostagem{
-    background-color: #101935 ;
-    color: aquamarine; 
+    background-color: #2660a4 ;
+    color: white;
     font-weight: bold;  
     text-decoration: none;  
 }

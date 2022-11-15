@@ -9,6 +9,10 @@
     margin-top: 20px;
 }
 
+.cad-textos{
+  color:navy !important;
+}
+
 .btnCadastroPost{
-    background-color:#101935 !important;
+    background-color:navy !important;
 }

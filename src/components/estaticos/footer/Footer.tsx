@@ -40,13 +40,13 @@ function Footer() {
           </Box>
           <Box display="flex" alignItems="center" justifyContent="center">
             <a href="https://github.com/HarukaIonaSao/" target="_blank">
-              <img src="https://i.imgur.com/g8Ojnd3.gif" width="60" className="redes" />
+              <img src="https://i.imgur.com/aaYJV15.gif" width="60" className="redes" />
             </a>
             <a
               href="https://www.linkedin.com/in/roberta-ribeiro-ela-she-b5521a4b/"
               target="_blank"
             >
-              <img src="https://i.imgur.com/Tsnm2Vc.gif" width="50" className="redes" />
+              <img src="https://i.imgur.com/BDcSAe3.gif" width="50" className="redes" />
             </a>
           </Box>
         </Box>
@@ -56,7 +56,7 @@ function Footer() {
               variant="subtitle2"
               align="center"
               gutterBottom
-              style={{ color: "aqua" }}
+              style={{ color: "white" }}
             >
               © 2022 Copyright:
             </Typography>

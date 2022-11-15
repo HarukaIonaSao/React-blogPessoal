@@ -7,10 +7,12 @@
 
 .cursor{
     cursor: pointer;
+    color:navy;
 }
 
+
 .btnModal{
-    background-color:#101935!important;
-    color: aqua !important;
+    background-color:navy !important;
+    color: white !important;
     margin-bottom: 5px;
 }

@@ -72,7 +72,7 @@ function Login() {
         <Grid item xs={6}>
           <Box padding={20}>
             <form onSubmit={onSubmit} className="form">
-              <Typography>Entrar</Typography>
+              <Typography className="text-login">Entrar</Typography>
               <TextField
                 value={userLogin.usuario}
                 onChange={(e: ChangeEvent<HTMLInputElement>) => updatedModel(e)}
@@ -95,9 +95,9 @@ function Login() {
               </Button>
             </form>
 
-            <Typography>
+            <Typography className="text-login">
               Ainda não tem uma conta?
-              <Link to="/cadastrousuario" className="text-decoration">
+              <Link to="/cadastrousuario" className="text-login">
                 Cadastre-se
               </Link>
             </Typography>
