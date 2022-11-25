@@ -16,12 +16,10 @@ import { Provider } from "react-redux";
 import store from "./store/Store";
 import {ToastContainer} from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
-import VLibras from "vlibras-react";
 
 function App() {
   return ( 
     <Provider store={store}>  
-      <VLibras />  
       <ToastContainer />
       <Router>
       <Navbar />
