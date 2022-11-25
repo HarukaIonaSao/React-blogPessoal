@@ -105,7 +105,6 @@ function Login() {
         </Grid>
         <Grid item xs={6} className="bgLogin"></Grid>
       </Grid>
-      <VLibras />
      
     </>
   );

@@ -9,7 +9,6 @@ import { useSelector } from "react-redux";
 import { TokenState } from "./../../store/tokens/TokensReducer";
 import { Link } from "react-router-dom";
 import {toast} from 'react-toastify';
-import VLibras from "vlibras-react";
 
 function Home() {
 
