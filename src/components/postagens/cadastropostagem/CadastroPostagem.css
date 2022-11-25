@@ -10,9 +10,15 @@
 }
 
 .cad-textos{
-  color:navy !important;
+  color:#000080 !important;
 }
 
 .btnCadastroPost{
-    background-color:navy !important;
+    background-color:#000080 !important;
+    box-shadow: 5px 5px 5px #000080 !important;
+
+}
+
+.itemSelect {
+  color: #000080!important;
 }

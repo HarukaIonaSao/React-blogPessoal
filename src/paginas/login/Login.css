@@ -16,12 +16,14 @@
 }
 
 .text-login{
-  color: navy;
+  color: #000080;
   text-decoration: none;  
 }
 
 .btnEntrar{
-  background-color: navy !important;
+  background-color: #000080 !important;
+  box-shadow: 5px 5px 5px #000080 !important;
+
 }
 
 

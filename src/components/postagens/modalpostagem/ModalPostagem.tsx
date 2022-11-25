@@ -23,8 +23,9 @@ const useStyles = makeStyles((theme: Theme) =>
       position: "absolute",
       width: 400,
       backgroundColor: theme.palette.background.paper,
-      border: "2px dotted #2660a4",
-      boxShadow: theme.shadows[5],
+      border: "2px solid white ",
+      borderRadius:"8px",
+      boxShadow: "5px 5px 5px #000080",
       padding: theme.spacing(2, 4, 3),
     },
   })

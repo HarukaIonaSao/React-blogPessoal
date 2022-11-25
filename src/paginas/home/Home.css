@@ -17,8 +17,10 @@
 }
 
 .button{
-    background-color:navy !important;
+    background-color:#000080 !important;
     color: white;
+    box-shadow: 5px 5px 5px #000080 !important;
+
 }
 
 .text-decoration{

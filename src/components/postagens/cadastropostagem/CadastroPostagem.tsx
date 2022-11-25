@@ -167,7 +167,7 @@ function CadastroPostagem() {
           align="center"
           className="cad-textos"
         >
-          Cadastro postagem
+          Cadastro  de postagem
         </Typography>
 
         <TextField
@@ -204,7 +204,7 @@ function CadastroPostagem() {
             })}>
               
               {temas.map((temas) => (
-                <MenuItem value={temas.id}>{temas.descricao}</MenuItem>
+                <MenuItem value={temas.id} className='itemSelect'>{temas.descricao}</MenuItem>
               ))}
               </Select>
 

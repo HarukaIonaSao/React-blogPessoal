@@ -10,10 +10,12 @@
 }
 
 .btnCad{
-    background:#2660a4 !important;
+    background:#000080 !important;
+    box-shadow: 5px 5px 5px #000080 !important;
+
 }
 
 .cad-tema{
     font-size: xx-large !important;
-    color: #2660a4 !important;
+    color: #000080 !important;
 }

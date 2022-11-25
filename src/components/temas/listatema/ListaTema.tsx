@@ -52,6 +52,7 @@ function ListaTema() {
 
   return (
     <>
+    
       {temas.map((tema) => (
         <Box m={10}>
           <Card variant="outlined" >
@@ -79,7 +80,7 @@ function ListaTema() {
                 </Link>
                 <Link to={`/deletarTema/${tema.id}`}  className="text-decoration">
                   <Box mx={1}>
-                    <Button variant="contained" size="small" color="secondary">
+                    <Button variant="contained" size="small" className="btnDel">
                       Deletar
                     </Button>
                   </Box>

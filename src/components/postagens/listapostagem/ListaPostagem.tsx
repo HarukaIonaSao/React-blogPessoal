@@ -52,16 +52,12 @@ function ListaPostagem() {
 
   return (
     <>
-    {/* <div id="loader">
-    <div className="ls-particles ls-part-1"></div>
-    <div className="ls-particles ls-part-2"></div>
-    <div className="ls-particles ls-part-3"></div>
-    <div className="ls-particles ls-part-4"></div>
-    <div className="ls-particles ls-part-5"></div>
-    <div className="lightsaber ls-left ls-green"></div>
-    <div className="lightsaber ls-right ls-red"></div>
-  </div> */}
+
+    <Box className="cont-lista-postagem">
+      {/* loader */}
+       {/* {postagem.length === 0 && <span className="loader"></span>} */}
       {postagem.map((postagem) => (
+        
         <Box m={10}>
           <Card variant="outlined">
             <CardContent className="card-post">
@@ -76,7 +72,11 @@ function ListaPostagem() {
               </Typography>
               <Typography variant="body2" component="p">
                 {postagem.tema?.descricao}
-              </Typography>                                       
+              </Typography>  
+              <Typography >
+                <img src="https://i.imgur.com/DS7h6I5.gif" alt="Samus Aran gif" className="imgPost"></img>
+
+                </Typography>                                     
             </CardContent>
             <CardActions className="card-post">
               <Box display="flex" justifyContent="center" mb={1.5}>
@@ -100,7 +100,7 @@ function ListaPostagem() {
                   className="text-decoration"
                 >
                   <Box mx={1}>
-                    <Button variant="contained" color="secondary" size="small" >
+                    <Button className ="btnDel" variant="contained" size="small" >
                       Deletar
                     </Button>
                   </Box>
@@ -110,6 +110,7 @@ function ListaPostagem() {
           </Card>
         </Box>
       ))}
+      </Box>
     </>
   );
 }

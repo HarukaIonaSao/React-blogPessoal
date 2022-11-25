@@ -3,5 +3,7 @@
 }
 
 .btnDelPost{
-    background-color: #2660a4 !important;
+    background-color: #000080 !important;
+    box-shadow: 5px 5px 5px #000080 !important;
+
 }
