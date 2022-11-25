@@ -8,7 +8,6 @@ import "./Login.css";
 import { useDispatch } from "react-redux";
 import { addToken } from "../../store/tokens/Actions";
 import { toast } from "react-toastify";
-import VLibras from "vlibras-react";
 
 function Login() {
   let navigate = useNavigate();
